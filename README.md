@@ -104,7 +104,7 @@ Từ những bước đi đầu tiên với biến và vòng lặp, đến việ
 
 ---
 
-## ⚡ Hướng Dẫn Chạy Nhanh
+## ⚡ Hướng Dẫn Chạy Nhanhh
 
 ```bash
 # 1. Clone repository
