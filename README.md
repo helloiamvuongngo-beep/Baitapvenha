@@ -1,12 +1,12 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&pause=1000&color=F89820&center=true&vCenter=true&width=600&lines=☕+Java+OOP+Homework+Vault;Lập+Trình+Hướng+Đối+Tượng;Week+by+Week+%7C+Step+by+Step" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=700&size=28&pause=1000&color=F89820&center=true&vCenter=true&width=600&lines=%E2%98%95%20Java%20OOP%20Homework%20Vault;L%E1%BA%ADp%20Tr%C3%ACnh%20H%C6%B0%E1%BB%9Bng%20%C4%90%E1%BB%91i%20T%C6%B0%E1%BB%A3ng;Week%20by%20Week%20%7C%20Step%20by%20Step" alt="Typing SVG" />
 
 <br/>
 
 [![Java](https://img.shields.io/badge/Java-17+-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://www.java.com/)
 [![OOP](https://img.shields.io/badge/OOP-Encapsulation%20%7C%20Inheritance%20%7C%20Polymorphism-6DB33F?style=for-the-badge)](https://en.wikipedia.org/wiki/Object-oriented_programming)
-[![Tuần học](https://img.shields.io/badge/Progress-Tuần%202%20→%203-4B8BBE?style=for-the-badge)](#-cấu-trúc-repository)
+[![Tuần học](https://img.shields.io/badge/Progress-Tuần%202%20→%204-4B8BBE?style=for-the-badge)](#-cấu-trúc-repository)
 [![Status](https://img.shields.io/badge/Status-🔥%20Active-success?style=for-the-badge)](#)
 [![License](https://img.shields.io/badge/License-Educational-blueviolet?style=for-the-badge)](#)
 
@@ -77,6 +77,14 @@ Từ những bước đi đầu tiên với biến và vòng lặp, đến việ
 │           └── 📁 util/
 │               └── 📄 ProductValidator.java  # Validation logic
 │
+├── 📁 Tuan4/                        # Bài tập Tuần 4
+│   └── 📁 Bai1/                     # ⭐ Hệ thống Quản lý Thư viện (Bài 1,2,3)
+│       ├── 📄 PhanTichYeuCau_NgoDoanDucVuong.docx
+│       └── 📁 src/
+│           ├── 📄 Main.java          # Menu & Console UI
+│           ├── 📁 model/             # Sach, DocGia, ThuThu, PhieuMuon...
+│           └── 📁 util/              # TienPhat
+│
 └── 📄 README.md
 ```
 
@@ -87,7 +95,8 @@ Từ những bước đi đầu tiên với biến và vòng lặp, đến việ
 |:----:|--------|:------:|:----------:|
 | **Tuần 2** | Nhập môn Java — biến, vòng lặp, hàm | 3 | ✅ Hoàn thành |
 | **Tuần 3** | OOP — Class, Object, Package, Validation, Static | 5 | ✅ Hoàn thành |
-| **Tuần 4+** | Kế thừa, Đa hình, Abstract, Interface | — | 🔜 Sắp tới |
+| **Tuần 4** | Thực hành OOP — Hệ thống Quản lý Thư viện | 1 | ✅ Hoàn thành |
+| **Tuần 5+** | Kế thừa, Đa hình, Abstract, Interface | — | 🔜 Sắp tới |
 
 ---
 
@@ -104,7 +113,7 @@ Từ những bước đi đầu tiên với biến và vòng lặp, đến việ
 
 ---
 
-## ⚡ Hướng Dẫn Chạy Nhanhh
+## ⚡ Hướng Dẫn Chạy Nhanh
 
 ```bash
 # 1. Clone repository
