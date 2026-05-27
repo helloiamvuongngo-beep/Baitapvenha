@@ -17,18 +17,14 @@ public class Lecturer extends Reader {
     }
 
     @Override
-    public String toString() {
-        return super.toString()
-             + "\nKhoa/BM    : " + department + " (Giang vien)";
+    public double calculateLateFee(int daysLate) {
+        return 1000.0 * daysLate;
     }
 
     @Override
     public String getInfo() {
-        return toString();
-    }
-
-    @Override
-    public double calculateLateFee(int daysLate) {
-        return 0;
+        return "[GV] " + getReaderID() + " | " + getFullName()
+             + " | Email: " + getEmail()
+             + " | Han muon: " + getMaxBorrow() + " cuon";
     }
 }

@@ -20,7 +20,7 @@ public class PhieuMuon {
         this.daTra = false;
     }
 
-    // Getters / Setters
+
     public String getMaPhieu() { return maPhieu; }
     public void setMaPhieu(String maPhieu) { this.maPhieu = maPhieu; }
     public DocGia getDocGia() { return docGia; }

@@ -29,7 +29,7 @@ public class ThuThu {
             return null;
         }
 
-        // Ràng buộc số lượng sách theo loại thẻ (Bài 3)
+
         if (!docGia.coTheMuonThem()) {
             System.out.println("❌ Lỗi: Độc giả đã mượn tối đa số sách cho phép (" + docGia.getLoaiThe().getSoSachToiDa() + " cuốn)!");
             return null;

@@ -29,7 +29,7 @@ public class Sach {
         soLuongTrongKho++;
     }
 
-    // Getters / Setters
+
     public String getMaSach() { return maSach; }
     public void setMaSach(String maSach) { this.maSach = maSach; }
     public String getTenSach() { return tenSach; }

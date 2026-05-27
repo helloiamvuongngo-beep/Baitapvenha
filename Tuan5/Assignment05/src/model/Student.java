@@ -17,18 +17,14 @@ public class Student extends Reader {
     }
 
     @Override
-    public String toString() {
-        return super.toString()
-             + "\nLoai the   : " + cardType + " (Sinh vien)";
+    public double calculateLateFee(int daysLate) {
+        return 2000.0 * daysLate;
     }
 
     @Override
     public String getInfo() {
-        return toString();
-    }
-
-    @Override
-    public double calculateLateFee(int daysLate) {
-        return 0;
+        return "[SV] " + getReaderID() + " | " + getFullName()
+             + " | Email: " + getEmail()
+             + " | Han muon: " + getMaxBorrow() + " cuon";
     }
 }

@@ -29,7 +29,7 @@ public class DocGia {
         }
     }
 
-    // Getters / Setters
+
     public String getMaDocGia() { return maDocGia; }
     public void setMaDocGia(String maDocGia) { this.maDocGia = maDocGia; }
     public String getHoTen() { return hoTen; }

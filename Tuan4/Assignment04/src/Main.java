@@ -27,9 +27,9 @@ public class Main {
         library.addReader(l1);
         library.addReader(l2);
 
-        library.printBooks();
+        library.showAllBooks();
         System.out.println();
-        library.printReaders();
+        library.showAllReaders();
 
         System.out.println("\n========== KIEM CHUNG KE THUA ==========");
         System.out.printf("%-20s %-30s %s%n", "Loai", "Ho ten", "Muon toi da");

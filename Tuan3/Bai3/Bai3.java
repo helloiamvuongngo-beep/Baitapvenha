@@ -108,7 +108,7 @@ public class Bai3 {
         tk2.displayInfo();
 
         System.out.println("\n--- 5. Thử nghiệm tính năng chuyển tiền (Phần mở rộng điểm cộng) ---");
-        tk1.transfer(tk2, 200000); // tk1 chuyển 200k cho tk2
+        tk1.transfer(tk2, 200000);
         System.out.print("Thông tin tk1 sau khi chuyển tiền: ");
         tk1.displayInfo();
         System.out.print("Thông tin tk2 sau khi nhận tiền: ");

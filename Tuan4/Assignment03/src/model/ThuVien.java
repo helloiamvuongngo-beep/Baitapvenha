@@ -25,7 +25,6 @@ public class ThuVien {
         return danhSachSach.stream().filter(s -> s.getMaSach().equals(maSach)).findFirst().orElse(null);
     }
     
-    // Yêu cầu nâng cao (Bài 3): Tìm kiếm sách theo tên HOẶC theo tác giả (so khớp gần đúng, không phân biệt hoa thường)
     public List<Sach> timKiemSach(String tuKhoa) {
         String keyword = tuKhoa.toLowerCase();
         return danhSachSach.stream()
