@@ -85,6 +85,17 @@ Từ những bước đi đầu tiên với biến và vòng lặp, đến việ
 │           ├── 📁 model/             # Sach, DocGia, ThuThu, PhieuMuon...
 │           └── 📁 util/              # TienPhat
 │
+├── 📁 Tuan5/                        # Bài tập Tuần 5
+│   └── 📁 Assignment05/             # Quản lý thư viện nâng cao (DigitalAccount, Readers, Books)
+│       └── 📁 src/
+│           ├── 📄 Main.java          # Test tài khoản số & thư viện
+│           └── 📁 model/             # Book, Reader, DigitalAccount,...
+│
+├── 📁 Tuan6/                        # Bài tập Tuần 6
+│   └── 📁 Assignment06/
+│       └── 📁 src/
+│           └── 📄 Main.java          # Khởi tạo dự án
+│
 └── 📄 README.md
 ```
 
@@ -96,7 +107,8 @@ Từ những bước đi đầu tiên với biến và vòng lặp, đến việ
 | **Tuần 2** | Nhập môn Java — biến, vòng lặp, hàm | 3 | ✅ Hoàn thành |
 | **Tuần 3** | OOP — Class, Object, Package, Validation, Static | 5 | ✅ Hoàn thành |
 | **Tuần 4** | Thực hành OOP — Hệ thống Quản lý Thư viện | 1 | ✅ Hoàn thành |
-| **Tuần 5+** | Kế thừa, Đa hình, Abstract, Interface | — | 🔜 Sắp tới |
+| **Tuần 5** | Kế thừa, Đa hình, Abstract, Interface | 1 | ✅ Hoàn thành |
+| **Tuần 6** | Thực hành OOP nâng cao | — | 🔜 Sắp tới |
 
 ---
 

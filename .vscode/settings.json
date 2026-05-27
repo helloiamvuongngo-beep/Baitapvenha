@@ -2,6 +2,7 @@
     "java.import.exclusions": [
         "**/Tuan2/**",
         "**/Tuan3/**",
-        "**/Tuan4/**"
+        "**/Tuan4/**",
+        "**/Tuan5/**"
     ]
 }
