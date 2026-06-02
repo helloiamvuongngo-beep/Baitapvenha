@@ -1,0 +1,26 @@
+=== 1. DANH SACH TAT CA DOC GIA (DYNAMIC BINDING) ===
+[SV] SV001 | Nguyen Van An | Han muon: 3 cuon | Han the: 31/12/2026
+[GV] GV001 | Tran Thi Binh | Han muon: 5 cuon | Han the: 01/06/2028
+NCT001 | Le Hoang Phuoc | Han the: 31/12/2030 | Ma the: CC2024001 [NCT - MIEN PHAT]
+[Khach] KH001 | Pham Van Guest [Doc tai cho]
+
+=== 2. TINH TONG PHI PHAT CUA DOC GIA (POLYMORPHISM) ===
+Tong phi phat tre han 5 ngay la: 40000.0 VND
+
+=== 3. TIM KIEM DOC GIA THEO TEN ===
+Tim thay doc gia phu hop: [GV] GV001 | Tran Thi Binh | Han muon: 5 cuon | Han the: 01/06/2028
+
+=== 4. LOC DOC GIA NGUOI CA TUOI (DOWNCASTING) ===
+NCT001 | Le Hoang Phuoc | Han the: 31/12/2030 | Ma the: CC2024001 [NCT - MIEN PHAT] | Ma the NCT: CC2024001
+
+=== 5. GIA HAN THE CHO CAC CON CUA CARDHOLDER (LSP COMPLIANT) ===
+Gia han the cua Nguyen Van An them 6 thang.
+Gia han the cua Tran Thi Binh them 6 thang.
+Gia han the cua Le Hoang Phuoc them 6 thang.
+
+=== 6. BAO CAO PHI PHAT CHO CA BON DOC GIA (POLYMORPHISM & LSP VERIFICATION) ===
+=== BAO CAO PHI PHAT TRE HAN (5 ngay) ===
+  Nguyen Van An        | Phi phat:  10000 VND
+  Tran Thi Binh        | Phi phat:  25000 VND
+  Le Hoang Phuoc       | Phi phat:      0 VND
+  Pham Van Guest       | Phi phat:   5000 VND
