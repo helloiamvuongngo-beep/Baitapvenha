@@ -1,0 +1,70 @@
+public class SanPham
+{
+    public string Ten  { get; set; }
+    public double Gia  { get; set; }
+    public SanPham(string ten, double gia) { Ten = ten; Gia = gia; }
+    public override string ToString() => $"{Ten} ({Gia:C})";
+}
+ 
+public class GioHang
+{
+    private List<SanPham> _danhSach = new List<SanPham>();
+ 
+    // Lay ban sao danh sach (tranh bi chinh sua tu ben ngoai)
+    public IReadOnlyList<SanPham> DanhSach => _danhSach.AsReadOnly();
+ 
+    // Tong gia tri gio hang
+    public double TongGia => _danhSach.Sum(sp => sp.Gia);
+ 
+    // Constructor noi bo: dung boi cac toan tu
+    private GioHang(List<SanPham> ds) { _danhSach = ds; }
+    public GioHang() { }
+ 
+    // Toan tu +: GioHang + SanPham => GioHang moi co them san pham do
+    public static GioHang operator +(GioHang gh, SanPham sp)
+    {
+        var dsMoi = new List<SanPham>(gh._danhSach) { sp };
+        return new GioHang(dsMoi);
+    }
+ 
+    // Toan tu +: GioHang + GioHang => Ket hop hai gio hang
+    public static GioHang operator +(GioHang gh1, GioHang gh2)
+    {
+        var dsMoi = new List<SanPham>(gh1._danhSach);
+        dsMoi.AddRange(gh2._danhSach);
+        return new GioHang(dsMoi);
+    }
+ 
+    // Toan tu -: GioHang - SanPham => Xoa san pham khoi gio hang
+    public static GioHang operator -(GioHang gh, SanPham sp)
+    {
+        var dsMoi = new List<SanPham>(gh._danhSach);
+        dsMoi.Remove(sp);
+        return new GioHang(dsMoi);
+    }
+    public override string ToString()
+        => $"Gio hang: {_danhSach.Count} san pham | Tong: {TongGia:C}";
+}
+
+// Su dung
+public class Program
+{
+    public static void Main()
+    {
+        var sp1 = new SanPham("Ao thun", 150000);
+        var sp2 = new SanPham("Quan jeans", 300000);
+        var sp3 = new SanPham("Giay the thao", 500000);
+ 
+        var gh1 = new GioHang() + sp1 + sp2; // Them san pham vao gio hang
+        var gh2 = new GioHang() + sp3;       // Gio hang khac co san pham khac
+ 
+        Console.WriteLine(gh1); // Gio hang: 2 san pham | Tong: 450.000 VND
+        Console.WriteLine(gh2); // Gio hang: 1 san pham | Tong: 500.000 VND
+ 
+        var gh3 = gh1 + gh2; // Ket hop hai gio hang
+        Console.WriteLine(gh3); // Gio hang: 3 san pham | Tong: 950.000 VND
+ 
+        var gh4 = gh3 - sp2; // Xoa san pham khoi gio hang
+        Console.WriteLine(gh4); // Gio hang: 2 san pham | Tong: 650.000 VND
+    }
+}

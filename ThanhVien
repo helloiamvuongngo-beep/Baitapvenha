@@ -1,0 +1,40 @@
+public class ThanhVien
+{
+    public string HoTen { get; set; }
+    public int DiemTichLuy { get; set; }
+ 
+    public ThanhVien(string hoTen, int diemTichLuy)
+    {
+        HoTen  = hoTen;
+        DiemTichLuy = diemTichLuy;
+    }
+ 
+    // So sanh theo diem tich luy
+    public static bool operator >(ThanhVien a, ThanhVien b)
+        => a.DiemTichLuy > b.DiemTichLuy;
+ 
+    public static bool operator <(ThanhVien a, ThanhVien b)
+        => a.DiemTichLuy < b.DiemTichLuy;
+ 
+    public override string ToString()
+        => $"{HoTen} ({DiemTichLuy} diem)";
+}
+
+public class Program
+{
+    public static void Main()
+    {
+        var tv1 = new ThanhVien("Nguyen Van A", 1200);
+        var tv2 = new ThanhVien("Le Thi B", 1500);
+ 
+        Console.WriteLine(tv1); // Nguyen Van A (1200 diem)
+        Console.WriteLine(tv2); // Le Thi B (1500 diem)
+ 
+        if (tv1 > tv2)
+            Console.WriteLine($"{tv1.HoTen} co diem tich luy cao hon {tv2.HoTen}");
+        else if (tv1 < tv2)
+            Console.WriteLine($"{tv2.HoTen} co diem tich luy cao hon {tv1.HoTen}");
+        else
+            Console.WriteLine("Hai thanh vien co diem tich luy bang nhau");
+    }
+}
