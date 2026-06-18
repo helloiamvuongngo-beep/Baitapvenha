@@ -1,0 +1,22 @@
+Câu 1: Interface và abstract class khác nhau ở những điểm gì? Khi nào dùng cái nào?
+- Khác nhau:
+  + Cú pháp: Dùng từ khóa interface và implements cho interface; abstract class và extends cho abstract class.
+  + Đa kế thừa: Một class có thể implement nhiều interface nhưng chỉ có thể extends một abstract class.
+  + Thuộc tính: Biến trong interface mặc định là public static final. Abstract class có thể có các thuộc tính bình thường (instance variables) với các access modifier khác nhau.
+  + Constructor: Interface không có constructor. Abstract class có thể có constructor.
+  + Phương thức: Interface chủ yếu chứa abstract method, default method và static method. Abstract class có thể chứa cả abstract method và các phương thức thông thường có body.
+- Khi nào dùng:
+  + Dùng interface khi muốn thiết kế "hợp đồng hành vi" chung cho các class không có quan hệ họ hàng (is-a).
+  + Dùng abstract class khi các class có cùng bản chất kế thừa (is-a), muốn chia sẻ và tái sử dụng mã nguồn hoặc trạng thái (state).
+
+Câu 2: Tại sao Java cho phép implement nhiều interface nhưng không cho extends nhiều class?
+- Tránh vấn đề "Diamond Problem" (đa kế thừa xung đột mã nguồn): Nếu extends nhiều class, khi hai class cha có cùng một phương thức với triển khai khác nhau, class con sẽ không biết thừa kế triển khai nào.
+- Interface ban đầu chỉ chứa các abstract method (không có body) nên việc implement nhiều interface không gây ra xung đột vì class con bắt buộc phải tự viết lại (override) phần thân phương thức đó. Kể cả khi có default method trùng nhau, Java cũng bắt buộc class con phải override để làm rõ phương thức nào được gọi.
+
+Câu 3: Default method giải quyết vấn đề gì? Nếu hai interface có cùng default method, class phải làm gì?
+- Vấn đề giải quyết: Giúp thêm các phương thức mới vào interface cũ mà không làm hỏng (break) code của các class đã implement interface đó trước đây.
+- Cách xử lý khi trùng: Class implement phải override lại phương thức trùng đó để chỉ định rõ ràng sẽ chạy logic nào (hoặc có thể gọi trực tiếp phương thức của interface mong muốn bằng cách dùng tên_interface.super.tên_phương_thức()).
+
+Câu 4: Tại sao nên khai báo biến theo kiểu interface (Payable p = new Member()) thay vì kiểu class (Member p = new Member())?
+- Tăng tính linh hoạt và giảm sự phụ thuộc trực tiếp (loose coupling). Khi dùng kiểu interface, ta có thể dễ dàng thay đổi đối tượng thực tế đằng sau (ví dụ: thay new Member() bằng new Partner() mà không cần sửa code sử dụng biến p, miễn là cả hai đều implement Payable).
+- Hỗ trợ lập trình đa hình tốt hơn, giúp code dễ bảo trì, mở rộng và test (mocking).
